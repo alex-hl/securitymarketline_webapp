@@ -6,3 +6,4 @@
 * The app also computes the measure of systematic risk, beta, for the chosen stock
 * A plot of the security characteristic line is outputted. It is an interactive plot. The user can hover his/her cursor over any observations to see specific returns of the security vs the market on a given date
 * Every time the user press computes, the most recent data about the chosen security is retrived automatically.
+* The user can also chose which treasury bill he would like to use as the risk free rate in the model (data retrieved from the FRED)
