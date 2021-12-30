@@ -1,0 +1,30 @@
+## Using The Security Characteristic Line
+
+Also known as "SCL", the security characteristic line is a regression line that plots the performance of a security/portfolio against the market portfolio. This calculator uses the S&P500 as the market portfolio. It is updated every time you press the button 'Compute'. 
+
+The y-axis has Realized excess returns of the security and the x-axis Realized excess returns on the S&P500. These excess returns are computed over a the risk free rate which can be chosen by the user (treasury bills data retrieved from the FRED). The user can choose any ticker to compute the SCL. The graph is interactive meaning you can hover your cursor over points to specifically see returns on a specific date.
+
+In practice, a security with a positive $\alpha$ has outperformed the market.   
+The $\beta$ coefficient measures the security's systematic risk.  
+The coefficient of determination, $R^2$, measures how closely the performance of an asset can be attributed to the performance of a selected benchmark index.
+
+Even though the SCL model can be used on stocks, it is more often used to measure performance of portfolios such as mutual funds. You can check the alpha of any publicly traded funds if you have its ticker. 
+
+
+
+## Formula
+
+# 
+
+$SCL: R_{i,t} - R_f = \alpha_i +\beta_i(R_{Mkt,t} - R_f) + \epsilon_{i,t}$
+
+where:
+
+$\alpha_i$  is the asset's alpha  
+$R_{i,t} - R_f$ are the excess returns of the security  
+$R_{Mkt,t} - R_f$ are the excess returns of the market  
+$\beta_i$ is the measure of the security's systematic risk   
+$R_{i,t}$ are the actual returns on the security  
+$R_{Mkt,t}$ are the actual returns on the market  
+$R_f$ are the returns on the risk free asset    
+$\epsilon_{i,t}$ is the error term in the linear regression
